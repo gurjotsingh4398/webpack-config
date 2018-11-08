@@ -11,7 +11,8 @@ module.exports = ({ mode, presets } = { mode: "production", presets: [] }) => {
     {
       mode,
       output: {
-        filename: "bundle.js"
+        filename: "bundle.js",
+        chunkFilename: "[name].lazy-chunk.js"
         // ,publicPath: "/"
       },
       module: {
